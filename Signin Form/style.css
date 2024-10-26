@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(fonts/Roboto-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: PortLligatSans-Regular;
+  src: url(fonts/PortLligatSans-Regular.woff2) format('woff2');
+}
+
+body {
+  background-image: url(images/bckg-4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(33, 51, 53);
+}
+
+.nav-logo {
+  font-family: PortLligatSans-Regular;
+  color: rgb(146, 226, 231);
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-menu,
+.nav-login,
+a {
+  font-family: Roboto-Regular;
+  color: rgb(146, 226, 231);
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-menu,
+a {
+  text-decoration: none;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 5px 20px;
+}
+
+a:hover {
+  background-color: rgb(146, 226, 231);
+  color: black;
+  padding: 5px 20px;
+  transition: 0.8s;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.nav-login {
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.btn-CTA-1,
+.btn-CTA-2 {
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-CTA-1 {
+  background-color: rgb(146, 226, 231);
+  color: black;
+  font-weight: bold;
+  color: none;
+}
+
+.btn-CTA-2 {
+  background-color: white;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+  color: none;
+}
+
+.container-form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0;
+  border: 1px solid rgb(146, 226, 231);
+  border-radius: 15px;
+  width: 30%;
+  margin: 150px 450px;
+}
+
+.title {
+  font-family: PortLligatSans-Regular;
+  font-size: 1.3em;
+}
+
+.inputs input {
+  width: 270px;
+  height: 40px;
+  border: none;
+  border-radius: 19px;
+  padding-left: 15px;
+  font-family: Roboto-Regular;
+  font-size: 1em;
+  outline: none;
+}
+
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-family: Roboto-Regular;
+  font-size: 1em;
+  padding-left: 20px;
+}
+
+.btn-login {
+  font-family: Roboto-Regular;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  width: 270px;
+  padding: 8px;
+  background-color: rgb(146, 226, 231);
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: rgb(33, 51, 53);
+  color: rgb(146, 226, 231);
+  transition: 0.8s;
+}
+
