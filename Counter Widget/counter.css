@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, lightblue, darkblue);
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap);
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 60px;
+  font-family: "Roboto Mono";
+  gap: 50px;
+}
+
+.individual-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-brands {
+  font-size: 4rem;
+}
+
+.counter {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
