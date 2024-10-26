@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-Position-3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+     <ul>
+      <li><a href="#">Inspect elm</a></li>
+      <li><a href="#">static</a></li>
+      <li><a href="#">relative</a></li>
+      <li><a href="#">absolute</a></li>
+      <li><a href="#">fixed</a></li>
+      <li><a href="#">scroling</a></li>
+     </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>CSS Position Property</h1>
+    <h3 class="title-1">How to view the position of elements using Chrome Developer Tools</h3>
+    <p class="part-1">A useful tool in your front end web development workflow is Chrome's Developer Tools.
+
+      Among many things, you have the ability to look at the HTML/CSS/JavaScript code of any website to understand how
+      different styles work.
+
+      To see what position an element has on a web page on a Mac machine, press Control and click at the same time while
+      on the desired element. On a Window's machine, right click on the element you want to select.
+
+      A menu will then appear and from there select Inspect.
+
+      The Chrome Developer Tools will open.
+
+      Select the Computed tab and from there either scroll down to the position element or in the filter search box,
+      type in position.</p>
+
+    <h3 class="title-2">What is the default position of HTML elements in CSS?</h3>
+    <p class="part-2">By default, the position property for all HTML elements in CSS is set to static. This means that if you don't
+      specify any other position value or if the position property is not declared explicitly, it'll be static.
+
+      Visually, all elements follow the order of the HTML code, and in that way the typical document flow is created.
+
+      Elements appear one after the other – directly below one another, according to the order of the HMTL code.</p>
+
+    <h3 class="title-3">What is position relative in CSS?</h3>
+    <p class="part-3">position: relative works the same way as position: static;, but it lets you change an element's position.
+
+      But just writing this CSS rule alone will not change anything.
+
+      To modify the position, you'll need to apply the top, bottom, right, and left properties mentioned earlier and in
+      that way specify where and how much you want to move the element.
+
+      The top, bottom, right, and left offsets push the tag away from where it's specified, working in reverse.
+
+      top in fact moves the element towards the bottom of the element's parent container. bottom pushes the element
+      towards the top of the element's parent container, and so on.</p>
+
+    <h3 class="title-4">What is position absolute in CSS?</h3>
+    <p class="part-4">Absolute-positioned elements are completely taken out of the regular flow of the web page.
+
+      They are not positioned based on their usual place in the document flow, but based on the position of their
+      ancestor.
+
+      In the example above, the absolutely positioned square is inside a statically positioned parent.
+
+      This means it will be positioned relative to the whole page itself, which means relative to the <html> element –
+      the root of the page.
+
+      The coordinates, top: 50px; and left: 0;, are therefore based on the whole page.</p>
+
+      <h3 class="title-5">Fixed positioning</h3>
+      <p class="part-5">Let's now look at fixed positioning. This works in exactly the same way as absolute positioning, with one key difference: whereas absolute positioning fixes an element in place relative to its nearest positioned ancestor (the initial containing block if there isn't one), fixed positioning usually fixes an element in place relative to the visible portion of the viewport. (An exception to this occurs if one of the element's ancestors is a fixed containing block because its transform property has a value other than none.) This means that you can create useful UI items that are fixed in place, like persistent navigation menus that are always visible no matter how much the page scrolls.
+
+        Let's put together a simple example to show what we mean. First of all, delete the existing p:nth-of-type(1) and .positioned rules from your CSS.</p>
+
+        <h3 class="title-6">Scrolling index</h3>
+        <p class="part-6">The CSS might look as follows. In normal flow the  elements will scroll with the content. When we add position: sticky to the element, along with a top value of 0, supporting browsers will stick the headings to the top of the viewport as they reach that position. Each subsequent header will then replace the previous one as it scrolls up to that position.</p>
+
+
+  </main>
+</body>
+
+</html>
