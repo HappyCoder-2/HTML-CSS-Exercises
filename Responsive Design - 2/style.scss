@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(images/bg-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+  ul {
+    width: 100%;
+    list-style: none; // се отстрануваат bullets
+    display: flex; // да може да се порамнат елементите во flex-box 
+    justify-content: flex-end; // хоризонтално порамнување (на крај на box, т.е. десно)
+    align-items: center; // вертикално порамнување во центар (ова ќе биде видливо подоцна)
+
+    li {
+      height: 50px; // дава соодветна висина на линковите
+
+      a {
+        height: 100%; // со ова се подесуваат на висината на li
+        padding: 0 30px; // со ова се додава место околу <a> tags
+        text-decoration: none; // со ова линковите не се повеќе подвлечени (underline)
+        display: flex; // да може да се порамнат елементите во flex-box 
+        align-items: center; // ги порамнуваме елементите вертикално и сега се наоѓаат на средина гледано од горе
+        color: black;
+      }
+
+      :hover {
+        background-color: #d8cbcb;
+      }
+
+      :first-child {
+        margin-right: auto;
+      }
+    }
+  }
+
+  .sidebar {
+    position: fixed; // со оваа карактеристика sidebar-от нема да влијае на другите  елементи на страната
+    top: 0;
+    right: 0;
+    height: 100vh; // висина на sidebar-от: значи ја зафаќа цела висина на мониторот
+    width: 250px; // ширина на sidebar-от
+    z-index: 999; // со ова сме сигурни дека sidebar-от ќе биде над се' друго
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); // овој ефект го заматува sidebar-от
+    box-shadow: -10px 0 10px grba(0, 0, 0, 0.1);
+    display: none; // порамнување на елементите/линковите во flex-box-от
+    flex-direction: column; // елементите/линковите ќе бидат во колона, еден под друг
+    align-items: flex-start; // елементите/линковите ќе бидат позиционирани горе, на почеток
+    justify-content: flex-start; // елементите/линковите ќе бидат позиционирани лево на почеток
+
+    li {
+      width: 100%; // ова значи ширината на sidebar-от ќе биде 100% во зависност од големината на мониторот
+
+      a {
+        width: 100%; // ова значи ширината на линковите ќе биде 100% во зависност од големината на мониторот
+      }
+    }
+
+    @media (max-width: 375px) {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+.menu-button {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
