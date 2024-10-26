@@ -1,0 +1,52 @@
+/* Fonts */
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url(fonts/Roboto-Medium.woff2);
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(fonts/Roboto-Regular.woff2);
+}
+
+body {
+  margin: 30px;
+  font-family: 'Roboto-Regular';
+}
+
+header {
+
+}
+
+h1 {
+background-color: purple;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+h2 {
+background-color: purple;
+color: white;
+font-size: 18px;
+padding: 10px;
+}
+
+.main-article-body {
+display: flex;
+gap: 15px;
+font-size: 12px;
+}
+
+.part-1 {
+  background-color: #00ffff;  
+}
+.part-2 {
+  background-color: #00ffff;
+}
+.part-3 {
+  background-color: #00ffff;
+}
+
+p {
+
+}
